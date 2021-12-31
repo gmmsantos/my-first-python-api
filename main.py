@@ -24,5 +24,5 @@ def total_salary():
     return jsonify(data_push)
 
 
-# RUN API
+# RUN THE API
 app.run()
