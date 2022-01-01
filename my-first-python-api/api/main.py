@@ -3,7 +3,9 @@ from flask import Flask, jsonify
 from pandas.io.parsers import read_csv
 
 app = Flask(__name__)
-data = pd.read_csv("username-password-recovery-code.csv")
+data = pd.read_csv(
+    "/Users/gabrielsantos/my-first-python-api/my-first-python-api/data/username-password-recovery-code.csv"
+)
 
 # API FUNCTIONS
 @app.route("/")
